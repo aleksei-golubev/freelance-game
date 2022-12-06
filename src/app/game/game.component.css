@@ -4,7 +4,7 @@
   grid-template-areas: 'left middle middle middle middle right';
   position: absolute;
   width: 100%;
-  top: 61px;
+  top: 60px;
   bottom: 60px;
   /* grid-column-gap: 10px; - if you want gap between the columns */
 }
@@ -19,6 +19,7 @@
 /* Style the left column */
 .left {
   grid-area: left;
+  background-color:#f1f1f1;
 }
 
 /* Style the middle column */
@@ -29,4 +30,5 @@
 /* Style the right column */
 .right {
   grid-area: right;
+  background-color:#f1f1f1;
 }

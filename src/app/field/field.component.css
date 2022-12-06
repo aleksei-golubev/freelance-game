@@ -1,0 +1,21 @@
+.cell {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+  padding: 2px;
+  font-size: 8px;
+  text-align: right;
+}
+.even {
+  background-color: #bbb;
+}
+.odd {
+  background-color: #ccc;
+}
+.space {
+  display: inline-block;
+  width: 350px;
+  height: 70px;
+  vertical-align: middle;
+}
