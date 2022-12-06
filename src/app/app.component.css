@@ -1,3 +1,32 @@
-p {
-  font-family: Lato;
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  height: 60px;
+}
+.header h2 {
+  padding: 15px;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0px;
+}
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+  margin: 0;
+  line-height: 20px;
+  font-size: 15px;
 }

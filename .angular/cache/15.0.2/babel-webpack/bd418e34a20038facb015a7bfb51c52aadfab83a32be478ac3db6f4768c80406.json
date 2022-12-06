@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var PlayerType = /*#__PURE__*/(() => {\n  (function (PlayerType) {\n    PlayerType[\"HUMAN\"] = \"Human\";\n    PlayerType[\"AI\"] = \"AI\";\n  })(PlayerType || (PlayerType = {}));\n  return PlayerType;\n})();","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
