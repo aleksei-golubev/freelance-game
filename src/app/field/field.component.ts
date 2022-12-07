@@ -1,5 +1,4 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
-import { CellData } from '@freelance/model/cell-data';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'field',
@@ -7,13 +6,4 @@ import { CellData } from '@freelance/model/cell-data';
   styleUrls: ['./field.component.css']
 })
 export class FieldComponent {
-  
-  cellsData: CellData[];
-
-  constructor() {
-    this.cellsData = [];
-    for (let i = 1; i<=24; i++) {
-      this.cellsData.push(new CellData(i));
-    }
-  }
 }

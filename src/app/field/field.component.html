@@ -1,9 +1,9 @@
 <div class="field">
-  <div *ngFor="let i of [0,1,2,3,4,5,6,]" [ngClass]="['cell', i % 2 ? 'odd' : 'even']">{{cellsData[i].value}}</div><br/>
-  <div class="cell odd">{{cellsData[23].value}}</div><div class="space">&nbsp;</div><div class="cell odd">{{cellsData[7].value}}</div><br/>
-  <div class="cell even">{{cellsData[22].value}}</div><div class="space">&nbsp;</div><div class="cell even">{{cellsData[8].value}}</div><br/>
-  <div class="cell odd">{{cellsData[21].value}}</div><div class="space">&nbsp;</div><div class="cell odd">{{cellsData[9].value}}</div><br/>
-  <div class="cell even">{{cellsData[20].value}}</div><div class="space">&nbsp;</div><div class="cell even">{{cellsData[10].value}}</div><br/>
-  <div class="cell odd">{{cellsData[19].value}}</div><div class="space">&nbsp;</div><div class="cell odd">{{cellsData[11].value}}</div><br/>
-  <div *ngFor="let i of [18,17,16,15,14,13,12]" [ngClass]="['cell', i % 2 ? 'odd' : 'even']">{{cellsData[i].value}}</div>
+  <cell *ngFor="let i of [0,1,2,3,4,5,6,]" number="{{i}}"></cell><br/>
+  <cell number="23"></cell><div class="space">&nbsp;</div><cell number="7"></cell><br/>
+  <cell number="22"></cell><div class="space">&nbsp;</div><cell number="8"></cell><br/>
+  <cell number="21"></cell><div class="space">&nbsp;</div><cell number="9"></cell><br/>
+  <cell number="20"></cell><div class="space">&nbsp;</div><cell number="10"></cell><br/>
+  <cell number="19"></cell><div class="space">&nbsp;</div><cell number="11"></cell><br/>
+  <cell *ngFor="let i of [18,17,16,15,14,13,12]" number="{{i}}"></cell>
 </div>
