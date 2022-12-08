@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component } from '@angular/core';
 import { PlayersService } from '@freelance/service/players.service';
 
@@ -8,5 +9,9 @@ import { PlayersService } from '@freelance/service/players.service';
   styleUrls: ['./player.component.css']
 })
 export class PlayerComponent {
+
+  @Input()
+  number: number;
+
   constructor(public playersService: PlayersService) {}
 }
