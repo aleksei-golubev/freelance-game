@@ -7,10 +7,7 @@ import { PlayerType } from '@freelance/model/player-type';
 })
 export class PlayersService {
 
-  constructor() { }
-
   players: Player[];
-  human: Player;
 
   private names: string[] = ['Anna', 'Igor', 'Andrey', 'Denis', 'Elena'];
 
@@ -21,8 +18,6 @@ export class PlayersService {
     for(let i = 0; i<nAI; i++) {
       this.players.push(new Player(PlayerType.AI, this.getNameByN(i)));
     }
-
-    this.human = this.players[0];
   }
 
   getNameByN(n: number): string {

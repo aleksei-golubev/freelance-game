@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
+import { Input } from '@angular/core';
 import { Component } from '@angular/core';
-import { PlayersService } from '@freelance/service/players.service';
+import { Player } from '@freelance/model/player';
 
 @Component({
   standalone: true,
@@ -10,6 +11,6 @@ import { PlayersService } from '@freelance/service/players.service';
   styleUrls: ['./players-list.component.css']
 })
 export class PlayersListComponent {
-  constructor(public playersService: PlayersService) {
-  }
+  @Input()
+  players: Player[];
 }

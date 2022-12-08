@@ -5,13 +5,13 @@
 
   <div class="grid-container">
     <div class="left">
-      <player number="0"></player>
+      <player [player]="playersService.players[0]"></player>
     </div>
     <div class="middle">
       <field></field>
     </div>  
     <div class="right">
-      <players-list></players-list>
+      <players-list [players]="playersService.players"></players-list>
     </div>
   </div>
 
