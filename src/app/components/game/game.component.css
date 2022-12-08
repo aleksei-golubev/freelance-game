@@ -1,4 +1,33 @@
-/* The grid container */
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.header {
+  background-color: #e1e1e1;
+  height: 60px;
+}
+.header h2 {
+  padding: 15px;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0px;
+}
+.footer {
+  background-color: #e1e1e1;
+  padding: 20px;
+  text-align: center;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+  margin: 0;
+  line-height: 20px;
+  font-size: 15px;
+}
 .grid-container {
   display: grid;
   grid-template-areas: 'left middle middle middle middle right';
@@ -6,28 +35,18 @@
   width: 100%;
   top: 60px;
   bottom: 60px;
-  /* grid-column-gap: 10px; - if you want gap between the columns */
 }
-
-.left,
-.middle,
-.right {
+.left, .middle, .right {
   padding: 10px;
   overflow-y: auto;
 }
-
-/* Style the left column */
 .left {
   grid-area: left;
   background-color:#f1f1f1;
 }
-
-/* Style the middle column */
 .middle {
   grid-area: middle;
 }
-
-/* Style the right column */
 .right {
   grid-area: right;
   background-color:#f1f1f1;
