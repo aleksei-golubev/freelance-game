@@ -1,0 +1,12 @@
+.current,
+.next {
+  display: inline-block;
+}
+.current {
+  width: 70%;
+  text-align: left;
+}
+.next {
+  width: 30%;
+  text-align: right;
+}

@@ -17,6 +17,8 @@ export class Player {
     this.money = money ? money : 0;
     this.reputation = reputation ? reputation : 0;
     this.skills = skills ? skills : [];
+    
+    this.isActive = false;
   }
 
   type: PlayerType;
@@ -27,4 +29,6 @@ export class Player {
   money: number;
   reputation: number;
   skills: Skill[];
+  
+  isActive: boolean;
 }
