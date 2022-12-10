@@ -12,6 +12,7 @@
     </div>  
     <div class="right">
       <dice [dice]="dicesService.dices[0]"></dice>
+      <button (click)="movementService.moveActivePlayerForward()">Move forward</button>
       <turn-indicator></turn-indicator>
       <players-list [players]="playersService.players"></players-list>
     </div>

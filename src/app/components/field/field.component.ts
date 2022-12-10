@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CellComponent } from '@freelance/components/cell/cell.component';
+import { CellData } from '@freelance/model/cell-data';
+import { CellsService } from '@freelance/service/cells.service';
 
 @Component({
   standalone: true,
@@ -10,4 +12,9 @@ import { CellComponent } from '@freelance/components/cell/cell.component';
   styleUrls: ['./field.component.css'],
 })
 export class FieldComponent {
+  constructor(public cellsService: CellsService) {}
+
+  getCellData(idx: number): CellData {
+    return this.cellsService.cellsData[idx];
+  }
 }

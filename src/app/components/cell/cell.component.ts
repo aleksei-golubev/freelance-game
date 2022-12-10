@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { CellData } from '@freelance/model/cell-data';
 import { CellsService } from '@freelance/service/cells.service';
 
 @Component({
@@ -11,9 +12,8 @@ import { CellsService } from '@freelance/service/cells.service';
 })
 export class CellComponent {
   @Input()
-  number: number;
+  cellData: CellData;
 
   constructor(public cellsService: CellsService) {
-
   }
 }

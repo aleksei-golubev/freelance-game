@@ -8,22 +8,21 @@ import { PlayersService } from './players.service';
 export class TurnsService {
 
   turnNumber: number;
-  activePlayer: Player;
+  activePlayerNumber: number;
 
   constructor(private playersService: PlayersService) {}
 
   init() {
     this.turnNumber = 1;
-    this.activePlayer = this.playersService.players[0];
-    this.activePlayer.isActive = true;
+    this.activePlayerNumber = 1;
+    this.playersService.players[this.activePlayerNumber - 1].isActive = true;
   }
 
   nextTurn() {
-    this.activePlayer.isActive = false;
+    this.playersService.players[this.activePlayerNumber - 1].isActive = false;
     this.turnNumber += 1;
     
-    let activePlayerNumber = this.turnNumber % this.playersService.players.length || this.playersService.players.length;
-    this.activePlayer = this.playersService.players[activePlayerNumber - 1];
-    this.activePlayer.isActive = true;
+    this.activePlayerNumber = this.turnNumber % this.playersService.players.length || this.playersService.players.length;
+    this.playersService.players[this.activePlayerNumber - 1].isActive = true;
   }
 }

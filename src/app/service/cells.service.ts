@@ -10,8 +10,8 @@ export class CellsService {
 
   constructor() {
     this.cellsData = [];
-    for (let i = 1; i<=24; i++) {
-      this.cellsData.push(new CellData(i));
+    for (let i = 0; i<24; i++) {
+      this.cellsData.push(new CellData(i, i + 1));
     }
   }
 }

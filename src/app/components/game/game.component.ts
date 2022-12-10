@@ -9,6 +9,7 @@ import { TurnsService } from '@freelance/service/turns.service';
 import { TurnIndicatorComponent } from '@freelance/components/turn-indicator/turn-indicator.component';
 import { DiceComponent } from '@freelance/components/dice/dice.component';
 import { DicesService } from '@freelance/service/dices.service';
+import { MovementService } from '@freelance/service/movement.service';
 
 @Component({
   standalone: true,
@@ -20,8 +21,10 @@ import { DicesService } from '@freelance/service/dices.service';
 export class GameComponent {
   constructor(public playersService: PlayersService,
               public turnsService: TurnsService,
-              public dicesService: DicesService) {
-    playersService.generatePlayers(new Player(PlayerType.HUMAN, 'Alex'), 1);
+              public dicesService: DicesService,
+              public movementService: MovementService) {
+    playersService.generatePlayers(new Player(0, PlayerType.HUMAN, 'Alex'), 1);
     turnsService.init();
+    movementService.init();
   }
 }

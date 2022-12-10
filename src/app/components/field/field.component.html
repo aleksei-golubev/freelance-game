@@ -1,9 +1,9 @@
 <div class="field">
-  <cell *ngFor="let i of [0,1,2,3,4,5,6,]" number="{{i}}"></cell><br/>
-  <cell number="23"></cell><div class="space">&nbsp;</div><cell number="7"></cell><br/>
-  <cell number="22"></cell><div class="space">&nbsp;</div><cell number="8"></cell><br/>
-  <cell number="21"></cell><div class="space">&nbsp;</div><cell number="9"></cell><br/>
-  <cell number="20"></cell><div class="space">&nbsp;</div><cell number="10"></cell><br/>
-  <cell number="19"></cell><div class="space">&nbsp;</div><cell number="11"></cell><br/>
-  <cell *ngFor="let i of [18,17,16,15,14,13,12]" number="{{i}}"></cell>
+  <cell *ngFor="let i of [0,1,2,3,4,5,6,]" [cellData]="getCellData(i)"></cell><br/>
+  <cell [cellData]="getCellData(23)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(7)"></cell><br/>
+  <cell [cellData]="getCellData(22)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(8)"></cell><br/>
+  <cell [cellData]="getCellData(21)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(9)"></cell><br/>
+  <cell [cellData]="getCellData(20)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(10)"></cell><br/>
+  <cell [cellData]="getCellData(19)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(11)"></cell><br/>
+  <cell *ngFor="let i of [18,17,16,15,14,13,12]" [cellData]="getCellData(i)"></cell>
 </div>

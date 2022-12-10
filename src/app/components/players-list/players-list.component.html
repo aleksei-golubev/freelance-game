@@ -1,3 +1,7 @@
 <ul>
-  <li *ngFor="let player of players" [ngClass]="{'active': player.isActive}">{{player.name}} ({{player.type}})</li>
+  <li *ngFor="let player of players"
+      [ngClass]="{'active': player.isActive}"
+      [ngStyle]="{ color: player.color }">
+        {{player.name}} ({{player.type}})
+  </li>
 </ul>
