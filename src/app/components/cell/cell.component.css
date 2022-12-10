@@ -3,9 +3,14 @@
   width: 70px;
   height: 70px;
   vertical-align: middle;
-  padding: 2px;
+  padding: 0;
   font-size: 8px;
+  text-align: center;
+}
+.cell>.number {
   text-align: right;
+  padding: 2px;
+  margin: 0;
 }
 .even {
   background-color: #bbb;
@@ -14,9 +19,18 @@
   background-color: #ccc;
 }
 .player {
-  font-size: 15px;
+  font-size: 14px;
   padding: 2px;
   border-radius: 5px;
   margin: 2px;
-  background-color: #aaa;
+  background-color: #fff;
+  width: 18px;
+  text-align: center;
+  display: inline-block;
+  cursor: default;
+}
+.player.active {
+  font-weight: bold;
+  outline-width: 1px;
+  outline-style: solid;
 }

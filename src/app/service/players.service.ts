@@ -10,7 +10,7 @@ export class PlayersService {
   players: Player[];
 
   private names: string[] = ['Anna', 'Igor', 'Andrey', 'Denis', 'Elena'];
-  private colors: string[] = ['#ff1d58', '#f75990', '#fff685', '#00ddff', '#0049b7'];
+  private colors: string[] = ['#ff1d58', '#f75990', '#bbb685', '#00ddff', '#0049b7'];
 
   generatePlayers(human: Player, nAI: number): void {
     this.players = [];

@@ -1,9 +1,23 @@
 <div class="field">
-  <cell *ngFor="let i of [0,1,2,3,4,5,6,]" [cellData]="getCellData(i)"></cell><br/>
-  <cell [cellData]="getCellData(23)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(7)"></cell><br/>
-  <cell [cellData]="getCellData(22)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(8)"></cell><br/>
-  <cell [cellData]="getCellData(21)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(9)"></cell><br/>
-  <cell [cellData]="getCellData(20)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(10)"></cell><br/>
-  <cell [cellData]="getCellData(19)"></cell><div class="space">&nbsp;</div><cell [cellData]="getCellData(11)"></cell><br/>
-  <cell *ngFor="let i of [18,17,16,15,14,13,12]" [cellData]="getCellData(i)"></cell>
+  <table>
+    <tr>
+      <td *ngFor="let i of [0,1,2,3,4,5,6,7,8]"><cell [cellData]="getCellData(i)"></cell></td>
+    </tr>
+    <tr>
+      <td><cell [cellData]="getCellData(23)"></cell></td>
+      <td colspan="7" rowspan="3">&nbsp;</td>
+      <td><cell [cellData]="getCellData(9)"></cell></td>
+    </tr>
+    <tr>
+      <td><cell [cellData]="getCellData(22)"></cell></td>
+      <td><cell [cellData]="getCellData(10)"></cell></td>
+    </tr>
+    <tr>
+      <td><cell [cellData]="getCellData(21)"></cell></td>
+      <td><cell [cellData]="getCellData(11)"></cell></td>
+    </tr>
+    <tr>
+      <td *ngFor="let i of [20,19,18,17,16,15,14,13,12]"><cell [cellData]="getCellData(i)"></cell></td>
+    </tr>
+  </table>
 </div>

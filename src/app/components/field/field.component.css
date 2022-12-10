@@ -7,9 +7,9 @@ cell {
   font-size: 8px;
   text-align: right;
 }
-.space {
-  display: inline-block;
-  width: 350px;
-  height: 70px;
-  vertical-align: middle;
+table {
+  border-spacing: 0;
+}
+td {
+  padding: 0;
 }

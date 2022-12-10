@@ -1,10 +1,9 @@
 <div [ngClass]="['cell', cellData.id % 2 ? 'odd' : 'even']">
-  {{cellData.value}}<br/>
+  <p class="number">{{cellData.value}}</p>
   <span *ngFor="let player of cellData.players" class="player"
-        [ngStyle]="{
-          color: player.color,
-          fontWeight: player.isActive ? 'bold' : 'normal'
-        }">
+        [ngStyle]="{ color: player.color }"
+        [ngClass]="[player.isActive ? 'active' : '']"
+        [title]="player.name">
     {{player.name.substring(0, 1)}}
   </span>
 </div>
