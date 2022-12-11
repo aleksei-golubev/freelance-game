@@ -1,0 +1,1 @@
+export const JOBS_PATH = '/assets/jobs.json';

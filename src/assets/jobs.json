@@ -1,6 +1,6 @@
 [{
   "title": "Junior Software Developer",
-  "capacity": 2,
+  "capacity": 3,
   "experience": 12,
   "reputation": 2,
   "requirements": {
@@ -23,8 +23,8 @@
 {
   "title": "Database Operator",
   "capacity": 2,
-  "experience": 5,
-  "reputation": 1,
+  "experience": 6,
+  "reputation": 2,
   "requirements": {
     "experience": 0,
     "reputation": 0
@@ -33,7 +33,7 @@
 },
 {
   "title": "Web Master",
-  "capacity": 2,
+  "capacity": 3,
   "experience": 8,
   "reputation": 2,
   "requirements": {

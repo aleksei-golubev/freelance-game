@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TurnsService } from '@freelance/service/turns.service';
+import { TurnsService } from '@freelance/services/turns.service';
 
 @Component({
   standalone: true,

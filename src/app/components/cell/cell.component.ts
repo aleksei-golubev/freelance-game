@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { CellData } from '@freelance/model/cell-data';
-import { CellsService } from '@freelance/service/cells.service';
+import { CellsService } from '@freelance/services/cells.service';
 
 @Component({
   standalone: true,

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CellComponent } from '@freelance/components/cell/cell.component';
 import { CellData } from '@freelance/model/cell-data';
-import { CellsService } from '@freelance/service/cells.service';
+import { CellsService } from '@freelance/services/cells.service';
 
 @Component({
   standalone: true,
