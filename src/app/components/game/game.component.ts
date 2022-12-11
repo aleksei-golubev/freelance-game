@@ -23,7 +23,7 @@ export class GameComponent {
               public turnsService: TurnsService,
               public dicesService: DicesService,
               public movementService: MovementService) {
-    playersService.generatePlayers(new Player(0, PlayerType.HUMAN, 'Alex'), 5);
+    playersService.generatePlayers(new Player(0, PlayerType.HUMAN, 'Alex'), 0);
     turnsService.init();
     movementService.init();
   }

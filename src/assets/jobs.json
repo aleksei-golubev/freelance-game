@@ -1,0 +1,55 @@
+[{
+  "title": "Junior Software Developer",
+  "capacity": 2,
+  "experience": 12,
+  "reputation": 2,
+  "requirements": {
+    "experience": 0,
+    "reputation": 0
+  },
+  "salary": 10
+},
+{
+  "title": "System Administrator",
+  "capacity": 2,
+  "experience": 7,
+  "reputation": 2,
+  "requirements": {
+    "experience": 0,
+    "reputation": 0
+  },
+  "salary": 7
+},
+{
+  "title": "Database Operator",
+  "capacity": 2,
+  "experience": 5,
+  "reputation": 1,
+  "requirements": {
+    "experience": 0,
+    "reputation": 0
+  },
+  "salary": 6
+},
+{
+  "title": "Web Master",
+  "capacity": 2,
+  "experience": 8,
+  "reputation": 2,
+  "requirements": {
+    "experience": 0,
+    "reputation": 0
+  },
+  "salary": 12
+},
+{
+  "title": "Technical Support Specialist",
+  "capacity": 2,
+  "experience": 7,
+  "reputation": 3,
+  "requirements": {
+    "experience": 0,
+    "reputation": 0
+  },
+  "salary": 8
+}]
